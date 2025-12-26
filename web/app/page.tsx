@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/Navbar";
-import { SayGmBlock } from "@/components/SayGmBlock";
+import Navbar from "@/components/Navbar";
+import SayGmBlock from "@/components/SayGmBlock";
 
 export default function Home() {
   return (
@@ -10,14 +10,15 @@ export default function Home() {
 
       <Navbar />
 
-      <SayGmBlock />
-
-      <div className="mt-16 text-center">
-        <p className="text-sm text-gray-600">
-          Powered by Clarity & Chainhooks
-        </p>
+      <div className="relative z-10 w-full">
+        <SayGmBlock />
       </div>
-    </div>
-    </main >
+
+      <footer className="mt-auto py-12 text-center opacity-30 hover:opacity-100 transition-opacity">
+        <p className="text-[10px] mono uppercase tracking-[0.2em]">
+          Powered by Stacks L2 & Reown AppKit
+        </p>
+      </footer>
+    </main>
   );
 }
