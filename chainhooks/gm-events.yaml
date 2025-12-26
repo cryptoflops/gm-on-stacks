@@ -1,0 +1,17 @@
+---
+name: "gm-indexer"
+version: 1
+networks:
+  devnet:
+    use_events:
+      - "gm-nft.gm"
+    if_this:
+      scope: contract
+      contract_name: gm-nft
+      matches:
+        - type: print
+          topic: "gm"
+    then_that:
+      http_post:
+        url: "http://localhost:3000/api/chainhook"
+        authorization_header: "Bearer secret-token"

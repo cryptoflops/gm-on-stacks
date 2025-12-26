@@ -1,0 +1,18 @@
+[network]
+name = "devnet"
+stacks_node_rpc_address = "localhost:20443"
+stacks_node_p2p_address = "localhost:20444"
+bitcoin_node_rpc_address = "localhost:18443"
+bitcoin_node_p2p_address = "localhost:18444"
+
+[accounts.deployer]
+mnemonic = "fetch outside black test wash cover just modify user entry resolve flag"
+balance = 100000000000000
+
+[accounts.wallet_1]
+mnemonic = "spoil sock coyote spirit spray reduced venture store glow crowd asset regret"
+balance = 100000000000000
+
+[accounts.wallet_2]
+mnemonic = "option vibrant bitter estate annual prefer flight wave pony exotic swallow earn"
+balance = 100000000000000

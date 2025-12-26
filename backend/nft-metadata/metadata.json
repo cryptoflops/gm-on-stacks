@@ -1,0 +1,10 @@
+{
+    "name": "GM on Stacks Badge",
+    "description": "The official badge for saying GM on Stacks. Minted by broadcasting good vibes to the Bitcoin L2.",
+    "image": "ipfs://bafybeigadsr3oeusdk4jsu4eiza4kvn4a52eixalpmcce3mfc3ekb7doku",
+    "properties": {
+        "collection": "GM on Stacks",
+        "type": "Badge",
+        "edition": "2025"
+    }
+}

@@ -1,0 +1,28 @@
+# Mainnet Deployment Configuration
+# Generated for GM on Stacks
+
+---
+id: 0
+name: Deploy GM Contract to Mainnet
+network: mainnet
+stacks-node: "https://api.hiro.so"
+bitcoin-node: "https://blockstream.info/api"
+
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: sip-009-trait
+            expected-sender: SP1TN1ERKXEM2H9TKKWGPGZVNVNEKS92M7M3CKVJJ
+            clarity-version: 2
+            cost: 10000
+            path: contracts/sip-009-trait.clar
+            anchor-block-only: true
+        - contract-publish:
+            contract-name: gm
+            expected-sender: SP1TN1ERKXEM2H9TKKWGPGZVNVNEKS92M7M3CKVJJ
+            clarity-version: 2
+            cost: 500000
+            path: contracts/gm.clar
+            anchor-block-only: true
