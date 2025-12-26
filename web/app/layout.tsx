@@ -3,14 +3,22 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { AppKitProvider } from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter"
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono"
+});
 
 export const metadata: Metadata = {
-  title: "GM on Stacks",
-  description: "Mint your daily GM Badge on the Stacks blockchain. Powered by Reown AppKit.",
+  title: "Jackpot Wall | Speak Your Truth",
+  description: "Win the pot by broadcasting your message to the Stacks blockchain.",
   openGraph: {
-    title: "GM on Stacks",
-    description: "Mint your daily GM Badge on the Stacks blockchain.",
+    title: "Jackpot Wall",
+    description: "Speak Your Truth. Win the Pot.",
     images: ["https://cryptologos.cc/logos/stacks-stx-logo.png"],
   },
 };
@@ -22,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
         <AppKitProvider>
           {children}
         </AppKitProvider>

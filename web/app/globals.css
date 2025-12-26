@@ -1,37 +1,56 @@
 :root {
-  --background: #0f0f11;
+  --background: #09090b; /* Deep Zinc */
   --foreground: #ffffff;
-  --card: #1a1a1e;
   --primary: #5546ff; /* Stacks Purple */
-  --primary-hover: #4536e6;
-  --accent: #ff6b6b; /* Warm accent */
+  --secondary: #fc6432; /* Stacks Orange */
+  --surface: rgba(255, 255, 255, 0.05); /* Glass Surface */
+  --success: #10b981;
+  --border: rgba(255, 255, 255, 0.1);
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-card: var(--card);
   --color-primary: var(--primary);
-  --color-primary-hover: var(--primary-hover);
-  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+  --color-surface: var(--surface);
+  --color-success: var(--success);
+  --color-border: var(--border);
 }
 
 /* Base Styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Dot Pattern Background */
-.bg-dot-pattern {
-  background-image: radial-gradient(#333 1px, transparent 1px);
-  background-size: 24px 24px;
+/* Glassmorphism */
+.glass-surface {
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
 }
 
-/* Glass Effect */
-.glass-panel {
-  background: rgba(26, 26, 30, 0.6);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+.glass-surface:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.01);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Micro-Animations */
+@keyframes breathing {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.pulse-text {
+  animation: breathing 3s ease-in-out infinite;
+}
+
+.mono {
+  font-family: var(--font-jetbrains-mono), monospace;
 }
