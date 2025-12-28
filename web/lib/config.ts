@@ -1,8 +1,8 @@
 import { STACKS_DEVNET, STACKS_TESTNET, STACKS_MAINNET, StacksNetwork } from "@stacks/network";
 
-// Network selection via env var or default to devnet
+// Network selection via env var or default to testnet
 type NetworkMode = "devnet" | "testnet" | "mainnet";
-const NETWORK_MODE_RAW = (process.env.NEXT_PUBLIC_NETWORK_MODE || "devnet") as NetworkMode;
+const NETWORK_MODE_RAW = (process.env.NEXT_PUBLIC_NETWORK_MODE || "testnet") as NetworkMode;
 
 function getStacksNetwork(mode: NetworkMode): StacksNetwork {
     switch (mode) {
@@ -23,7 +23,7 @@ function getContractAddress(mode: NetworkMode): string {
 export const NETWORK_MODE = NETWORK_MODE_RAW;
 export const STACKS_NETWORK = getStacksNetwork(NETWORK_MODE_RAW);
 export const CONTRACT_ADDRESS = getContractAddress(NETWORK_MODE_RAW);
-export const CONTRACT_NAME = "gm";
+export const CONTRACT_NAME = "gm-on-stacks-v4";
 
 export const APP_DETAILS = {
     name: "GM on Stacks",
@@ -36,5 +36,12 @@ export const REOWN_PROJECT_ID = process.env.NEXT_PUBLIC_REOWN_PROJECT_ID || "dem
 // GM Fee in microSTX (0.1 STX = 100,000 microSTX)
 export const GM_FEE = 100000;
 
-// NFT Fee in microSTX (1 STX = 1,000,000 microSTX)
-export const NFT_FEE = 1000000;
+// NFT Fees in microSTX
+export const NFT_FEE_STREAK = 1000000;    // 1 STX (21+ day streak)
+export const NFT_FEE_NORMAL = 33000000;   // 33 STX (no streak / <21 days)
+
+// Legacy NFT fee (for backwards compatibility)
+export const NFT_FEE = NFT_FEE_NORMAL;
+
+// Streak threshold for NFT discount
+export const STREAK_THRESHOLD = 21;
