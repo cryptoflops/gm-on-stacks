@@ -224,3 +224,4 @@
 - The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
 - Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
 - Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
