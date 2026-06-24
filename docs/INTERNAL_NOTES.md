@@ -305,3 +305,115 @@
 - Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
 - Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
