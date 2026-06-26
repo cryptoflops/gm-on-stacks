@@ -548,3 +548,4 @@
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
 - Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
 - Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
