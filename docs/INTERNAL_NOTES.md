@@ -577,3 +577,4 @@
 - Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
