@@ -578,3 +578,4 @@
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
 - Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
