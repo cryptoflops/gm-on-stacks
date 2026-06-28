@@ -704,3 +704,4 @@
 - Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
 - Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
 - Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
