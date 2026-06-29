@@ -739,3 +739,4 @@
 - Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
