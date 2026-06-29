@@ -750,3 +750,4 @@
 - The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
 - Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
 - Reviewed component tree performance after adding STX balance polling, no measurable regression.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
