@@ -1,5 +1,5 @@
 {
-  "name": "@cryptoflops/gm-on-stacks",
+  "name": "gm-on-stacks-sdk",
   "version": "1.0.1",
   "description": "Say GM Onchain - Utility SDK for GM on Stacks",
   "publishConfig": {
