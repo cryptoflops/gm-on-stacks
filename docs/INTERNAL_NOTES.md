@@ -871,3 +871,4 @@
 - Reviewed component tree performance after adding STX balance polling, no measurable regression.
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
 - Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
