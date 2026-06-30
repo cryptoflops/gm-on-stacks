@@ -882,3 +882,4 @@
 - The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
 - Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
+- Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
