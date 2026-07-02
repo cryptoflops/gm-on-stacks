@@ -926,3 +926,4 @@
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
 - Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
 - The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
