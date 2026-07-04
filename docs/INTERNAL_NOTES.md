@@ -1066,3 +1066,4 @@
 - Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
 - The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
 - Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
+- Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
