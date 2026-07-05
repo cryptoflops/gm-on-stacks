@@ -1101,3 +1101,4 @@
 - Reviewed component tree performance after adding STX balance polling, no measurable regression.
 - Reviewed Clarity contract read-only functions. The response parsing handles optional values correctly.
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
