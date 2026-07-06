@@ -1133,3 +1133,4 @@
 - The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
 - Reviewed component tree performance after adding STX balance polling, no measurable regression.
 - Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
