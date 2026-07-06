@@ -1134,3 +1134,4 @@
 - Reviewed component tree performance after adding STX balance polling, no measurable regression.
 - Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
+- Tested the NFT minting flow on Stacks testnet. Metadata pinning to IPFS is reliable.
