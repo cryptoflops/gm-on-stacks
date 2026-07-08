@@ -1218,3 +1218,4 @@
 - Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
 - Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
 - Tested STX transfer flow on testnet. Post-conditions correctly prevent over-spending.
+- Investigated rendering jitter on mobile layout during wallet connection state changes.
