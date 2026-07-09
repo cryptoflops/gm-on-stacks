@@ -1273,3 +1273,4 @@
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
 - Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
 - The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
+- Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
