@@ -1253,3 +1253,4 @@
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
 - The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- Contract calls via openContractCall work fine but the transaction broadcast can take 10-30 blocks.
