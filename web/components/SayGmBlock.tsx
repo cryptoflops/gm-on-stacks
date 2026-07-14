@@ -327,9 +327,9 @@ export default function SayGmBlock() {
                     {/* CARD 1: DASHBOARD */}
                     <div className="glass-card spotlight-card flex flex-col h-full bg-black/40 border-white/5">
                         <div className="flex justify-between items-start mb-8">
-                            <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                            <h2 className="text-xl font-bold text-white flex items-center gap-2">
                                 <LayoutDashboard size={20} className="text-zinc-500" /> Dashboard
-                            </h3>
+                            </h2>
                             <span className="px-2 py-1 bg-white/5 text-zinc-500 text-[10px] font-mono rounded border border-white/10 uppercase tracking-widest">
                                 Profile
                             </span>
@@ -385,7 +385,7 @@ export default function SayGmBlock() {
                         {lastGmTxId ? (
                             <div className="h-full flex flex-col items-center justify-center text-center p-4">
                                 <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-6">
-                                    <CheckCircle2 className="text-green-500 w-8 h-8" />
+                                    <CheckCircle2 className="text-green-500 w-8 h-8" aria-hidden="true" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-white mb-2">GM Sent</h3>
                                 <p className="text-gray-400 text-xs mb-8 leading-relaxed">Broadcast to the Stacks blockchain.</p>
@@ -408,13 +408,15 @@ export default function SayGmBlock() {
                             <>
                                 <div className="flex-grow">
                                     <div className="flex justify-between items-start mb-8">
-                                        <h3 className="text-xl font-bold text-white">Say gm</h3>
+                                        <h2 className="text-xl font-bold text-white">Say gm</h2>
                                         <span className="px-2 py-0.5 bg-white/5 text-gray-400 text-[10px] font-mono rounded border border-white/10 uppercase tracking-widest">
                                             Daily
                                         </span>
                                     </div>
                                     <div className="bg-black/40 border border-white/5 rounded-xl p-5 mb-8 focus-within:border-purple-500/30 transition-all">
+                                        <label htmlFor="gm-message" className="sr-only">Your GM message</label>
                                         <textarea
+                                            id="gm-message"
                                             value={gmMessage}
                                             onChange={(e) => setGmMessage(e.target.value)}
                                             className="w-full bg-transparent text-white font-mono text-lg outline-none resize-none placeholder:text-gray-700"
@@ -451,7 +453,7 @@ export default function SayGmBlock() {
                         {lastNftTxId ? (
                             <div className="h-full flex flex-col items-center justify-center text-center p-4">
                                 <div className="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mb-6">
-                                    <Award className="text-orange-500 w-8 h-8" />
+                                    <Award className="text-orange-500 w-8 h-8" aria-hidden="true" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-white mb-2">Minting Badge</h3>
                                 <p className="text-gray-400 text-xs mb-8 leading-relaxed">Your limited edition GM Badge is on its way.</p>
@@ -474,7 +476,7 @@ export default function SayGmBlock() {
                             <>
                                 <div className="flex-grow">
                                     <div className="flex justify-between items-start mb-8">
-                                        <h3 className="text-xl font-bold text-white underline decoration-orange-500/40 underline-offset-8">Mint Badge</h3>
+                                        <h2 className="text-xl font-bold text-white underline decoration-orange-500/40 underline-offset-8">Mint Badge</h2>
                                         {hasStreakDiscount && (
                                             <span className="px-2 py-0.5 bg-orange-500/20 text-orange-400 text-[10px] font-bold rounded border border-orange-500/30 uppercase tracking-widest animate-pulse">
                                                 -97% OFF
@@ -505,6 +507,9 @@ export default function SayGmBlock() {
                                     <p className="mt-4 text-[10px] text-gray-600 font-mono uppercase tracking-widest text-center">
                                         {hasStreakDiscount ? "Eligible for discount" : "Streak: " + streakData.currentStreak + "/21"}
                                     </p>
+                                    {!hasStreakDiscount && streakData.currentStreak === 0 && (
+                                        <p className="text-xs text-zinc-500 mt-1">Say gm daily for 21 days to unlock the 97% discount</p>
+                                    )}
                                 </div>
                             </>
                         )}

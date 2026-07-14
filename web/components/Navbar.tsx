@@ -28,7 +28,7 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 right-0 p-6 z-50 flex justify-between items-start">
             {/* LEFT: BRANDING */}
             <div className="flex items-center gap-5 md:gap-6">
-                <img src="/assets/gm-logo.png" alt="App Icon" className="w-8 h-8 md:w-10 md:h-10 object-contain shrink-0 relative -top-1 left-1 md:-top-1.5 md:left-1.5" />
+                <img src="/assets/gm-logo.png" alt="GM on Stacks" className="w-8 h-8 md:w-10 md:h-10 object-contain shrink-0 relative -top-1 left-1 md:-top-1.5 md:left-1.5" />
                 <Link href="/" className="flex items-center group opacity-90 hover:opacity-100 transition-opacity">
                     <div className="flex flex-col">
                         <span className="text-lg font-display font-bold text-white leading-none tracking-tight">GM ON STACKS</span>
