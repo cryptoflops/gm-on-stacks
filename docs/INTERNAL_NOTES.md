@@ -1316,3 +1316,4 @@
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
 - The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
 - Investigated rendering jitter on mobile layout during wallet connection state changes.
+- The wallet connection flow via @stacks/connect works well on desktop but needs mobile fallback.
