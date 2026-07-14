@@ -1321,3 +1321,4 @@
 - Noticed the useStxBalance hook refetches too aggressively. Consider adding a 30s polling interval.
 - Reviewed component tree performance after adding STX balance polling, no measurable regression.
 - Checked backward compatibility with older Stacks API responses. v2/info endpoint is stable.
+- The Hiro wallet extension detection is synchronous which is nice compared to injected EVM providers.
