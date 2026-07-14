@@ -44,7 +44,7 @@ const nextConfig: NextConfig = {
           // but restricts scripts to self and trusted domains.
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.vercel.app https://*.walletconnect.org https://*.reown.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://*.reown.com data:; img-src 'self' data: blob: https://*.walletconnect.org https://*.reown.com https://cryptologos.cc https://explorer.hiro.so https://assets.unicorn.studio; connect-src 'self' https://*.hiro.so https://*.walletconnect.org https://*.reown.com https://api.web3modal.org wss://*.walletconnect.org https://cdn.jsdelivr.net https://storage.googleapis.com;"
+            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.pages.dev https://*.walletconnect.org https://*.reown.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://*.reown.com data:; img-src 'self' data: blob: https://*.walletconnect.org https://*.reown.com https://cryptologos.cc https://explorer.hiro.so https://assets.unicorn.studio; connect-src 'self' https://*.hiro.so https://*.walletconnect.org https://*.reown.com https://api.web3modal.org wss://*.walletconnect.org https://cdn.jsdelivr.net https://storage.googleapis.com;"
           }
         ]
       }
