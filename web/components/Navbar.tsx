@@ -52,7 +52,7 @@ export default function Navbar() {
             <button
                 onClick={handleConnect}
                 disabled={isConnecting}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded shadow-lg font-bold text-xs uppercase tracking-wider transition-all
+                className={`flex items-center gap-2 px-5 py-2.5 rounded shadow-lg font-bold text-xs uppercase tracking-wider transition-all active:scale-[0.98]
                     ${isConnected
                         ? "bg-[#111] border border-white/20 text-white hover:bg-[#222]"
                         : "bg-white text-black hover:bg-gray-200 hover:scale-105"
