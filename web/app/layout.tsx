@@ -32,23 +32,14 @@ export const metadata: Metadata = {
   }
 };
 
-import { authenticate } from '../src/lib/stacks-integration';
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Mount Stacks integration helpers
-  if (typeof window !== 'undefined') {
-    console.debug('Stacks SDK environment initialized. Auth method:', authenticate);
-  }
-
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} antialiased selection:bg-brand selection:text-white bg-black`}>
-        {/* Visual Layers for the Custom Background */}
-        <div className="noise-overlay pointer-events-none opacity-40"></div>
         <div className="fixed inset-0 dot-grid pointer-events-none -z-10 opacity-20"></div>
 
         {/* Soft Vignette and Vignette Bottom */}

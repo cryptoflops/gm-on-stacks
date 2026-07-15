@@ -53,6 +53,7 @@ body {
     transparent
   );
   border-radius: 1.5rem 1.5rem 0 0;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -164,5 +165,4 @@ body {
 *:focus-visible {
   outline: 2px solid #FF5500;
   outline-offset: 2px;
-  border-radius: 4px;
 }

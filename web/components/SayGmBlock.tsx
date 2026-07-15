@@ -14,6 +14,7 @@ import {
 
 import { Wallet, Loader2, Send, Award, Github, Zap, CheckCircle2, LayoutDashboard, History, Globe } from "lucide-react";
 import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
 import {
     getContractDeployer,
     getContractName,
@@ -286,13 +287,13 @@ export default function SayGmBlock() {
 
 
     return (
-        <section className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center p-6 pt-24 pb-40 text-center scale-95 md:scale-100 origin-top">
+        <section className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center p-6 pt-24 pb-40 text-center scale-95 md:scale-100 origin-top animate-fade-up">
 
 
             {/* HERO */}
             <div className="mb-20 animate-in fade-in zoom-in duration-1000 flex flex-col items-center">
                 <div className="flex items-center justify-center gap-2 md:gap-4 mb-6 w-full max-w-4xl mx-auto">
-                    <img src="/assets/gm-logo.png" alt="GM on Stacks" className="w-24 h-24 md:w-36 md:h-36 object-contain drop-shadow-2xl shrink-0 -mr-2 md:-mr-4 relative -top-4 md:-top-8" />
+                    <img src="/assets/gm-logo.png" alt="" width={96} height={96} className="w-24 h-24 md:w-36 md:h-36 object-contain drop-shadow-2xl shrink-0 -mr-2 md:-mr-4 relative -top-4 md:-top-8" />
                     <h1 className="font-display font-bold text-6xl md:text-9xl tracking-[-0.03em] leading-[0.9] drop-shadow-2xl flex flex-col text-left justify-center">
                         <span className="flex items-baseline gap-3 md:gap-4">
                             <span className="text-gradient-animate">GM</span>
@@ -312,20 +313,22 @@ export default function SayGmBlock() {
 
             {/* WALLET CONNECTION STATE */}
             {!isConnected ? (
-                <button
+                <Button
                     onClick={connectWallet}
-                    className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full text-lg hover:scale-105 active:scale-[0.98] transition-all duration-300 flex items-center gap-3 shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_rgba(255,255,255,0.5)]"
+                    variant="primary"
+                    size="lg"
+                    className="bg-white text-black font-semibold rounded-full hover:scale-105 hover:bg-gray-200 shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_rgba(255,255,255,0.5)] group"
                 >
                     <Wallet className="w-5 h-5" />
                     CONNECT WALLET
                     <span className="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
-                </button>
+                </Button>
             ) : (
-                <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6 animate-in slide-in-from-bottom-8 duration-700 fade-in items-stretch text-left">
+                <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6 animate-in slide-in-from-bottom-8 duration-700 fade-in animate-fade-up items-stretch text-left">
 
 
                     {/* CARD 1: DASHBOARD */}
-                    <div className="glass-card spotlight-card flex flex-col h-full bg-black/40 border-white/5">
+                    <div className="glass-card spotlight-card flex flex-col h-full bg-black/40 border-white/8">
                         <div className="flex justify-between items-start mb-8">
                             <h2 className="text-xl font-bold text-white flex items-center gap-2">
                                 <LayoutDashboard size={20} className="text-zinc-500" /> Dashboard
@@ -339,7 +342,7 @@ export default function SayGmBlock() {
                         <div className="space-y-6 flex-grow">
                             <div className="flex justify-between items-end border-b border-white/5 pb-4">
                                 <div className="text-left">
-                                    <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-1 flex items-center gap-1">Your total GMs</p>
+                                    <h3 className="text-[10px] text-zinc-400 uppercase tracking-widest mb-1 flex items-center gap-1">Your total GMs</h3>
                                     <p className="text-3xl font-display font-bold text-white tabular-nums">{streakData.totalGms}</p>
                                 </div>
                                 <div className="text-right">
@@ -350,18 +353,18 @@ export default function SayGmBlock() {
 
                             <div className="flex justify-between items-end border-b border-white/5 pb-4">
                                 <div className="text-left">
-                                    <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-1">Current streak</p>
+                                    <h3 className="text-[10px] text-zinc-400 uppercase tracking-widest mb-1">Current streak</h3>
                                     <p className="text-2xl font-display font-bold text-white tabular-nums">{streakData.currentStreak} <span className="text-sm font-light text-gray-400">Days</span></p>
                                 </div>
                                 <div className="text-right">
-                                    <Zap size={24} className={streakData.currentStreak > 0 ? "text-orange-500 animate-pulse" : "text-gray-700"} />
+                                    <Zap size={24} className={streakData.currentStreak > 0 ? "text-orange-500 animate-pulse-slow" : "text-gray-700"} aria-label={streakData.currentStreak > 0 ? "Active streak" : "No active streak"} />
                                 </div>
                             </div>
 
 
                             <div className="flex justify-between items-end">
                                 <div className="text-left">
-                                    <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-1">Best streak</p>
+                                    <h3 className="text-[10px] text-zinc-400 uppercase tracking-widest mb-1">Best streak</h3>
                                     <p className="text-2xl font-display font-bold text-white tabular-nums">{streakData.longestStreak} <span className="text-sm font-light text-gray-400">Days</span></p>
                                 </div>
                                 <History size={20} className="text-purple-500/50" />
@@ -371,7 +374,7 @@ export default function SayGmBlock() {
 
                         <div className="mt-8 pt-6 border-t border-white/5">
                             <div className="flex items-center justify-between text-[10px] font-mono">
-                                <span className="text-zinc-500 uppercase tracking-widest flex items-center gap-1"><Globe size={10} /> World GMs</span>
+                                <span className="text-zinc-500 uppercase tracking-widest flex items-center gap-1"><Globe size={14} /> World GMs</span>
                                 <span className="text-white font-bold tabular-nums">
                                     {globalGms}
                                 </span>
@@ -381,7 +384,7 @@ export default function SayGmBlock() {
 
 
                     {/* CARD 2: SAY GM */}
-                    <div className={`glass-card spotlight-card flex flex-col h-full bg-[#1a1225]/40 border-white/5 transition-all duration-500 ${lastGmTxId ? 'border-green-500/40 bg-green-500/5' : ''}`}>
+                    <div className={`glass-card spotlight-card flex flex-col h-full bg-[#1a1225]/40 border-white/8 transition-all duration-500 ${lastGmTxId ? 'border-green-500/40 bg-green-500/5' : ''}`}>
                         {lastGmTxId ? (
                             <div className="h-full flex flex-col items-center justify-center text-center p-4">
                                 <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-6">
@@ -397,12 +400,14 @@ export default function SayGmBlock() {
                                 >
                                     View Transaction <Award size={12} />
                                 </a>
-                                <button
+                                <Button
                                     onClick={() => setLastGmTxId(null)}
-                                    className="text-[10px] text-gray-500 hover:text-white transition-colors active:scale-[0.98] uppercase font-mono"
+                                    variant="ghost"
+                                    size="sm"
+                                    className="text-[10px] uppercase font-mono"
                                 >
                                     Back to GM
-                                </button>
+                                </Button>
                             </div>
                         ) : (
                             <>
@@ -414,7 +419,7 @@ export default function SayGmBlock() {
                                         </span>
                                     </div>
                                     <div className="bg-black/40 border border-white/5 rounded-xl p-5 mb-8 focus-within:border-purple-500/30 transition-all">
-                                        <label htmlFor="gm-message" className="sr-only">Your GM message</label>
+                                        <label htmlFor="gm-message" className="sr-only">Write gm...</label>
                                         <textarea
                                             id="gm-message"
                                             value={gmMessage}
@@ -422,24 +427,26 @@ export default function SayGmBlock() {
                                             className="w-full bg-transparent text-white font-mono text-lg outline-none resize-none placeholder:text-gray-700"
                                             rows={2}
                                             placeholder="Write gm..."
+                                            aria-describedby="gm-hint"
                                         />
                                     </div>
                                 </div>
 
 
                                 <div>
-                                    <button
+                                    <Button
                                         onClick={handleSayGM}
                                         disabled={isGMLoading || isActionPending}
-                                        className="w-full py-4 bg-purple-950/20 hover:bg-purple-900/30 border border-purple-500/20 text-purple-200/80 hover:text-white font-bold rounded-xl transition-all active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
+                                        variant="ghost"
+                                        className="w-full py-4 bg-purple-950/20 hover:bg-purple-900/30 border border-purple-500/20 text-purple-200/80 hover:text-white font-bold rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
                                     >
                                         {isGMLoading ? <Loader2 className="animate-spin" /> : (
                                             <>
                                                 Send gm <Send size={16} />
                                             </>
                                         )}
-                                    </button>
-                                    <p className="mt-4 text-[10px] text-gray-600 font-mono uppercase tracking-widest text-center">
+                                    </Button>
+                                    <p className="mt-4 text-[10px] text-zinc-400 font-mono uppercase tracking-widest text-center" id="gm-hint">
                                         Onchain
                                     </p>
                                 </div>
@@ -449,7 +456,7 @@ export default function SayGmBlock() {
 
 
                     {/* CARD 3: MINT BADGE */}
-                    <div className={`glass-card spotlight-card flex flex-col h-full bg-black/40 border-white/10 transition-all duration-500 ${lastNftTxId ? 'border-orange-500/40 bg-orange-500/5' : ''}`}>
+                    <div className={`glass-card spotlight-card flex flex-col h-full bg-black/40 border-white/8 transition-all duration-500 ${lastNftTxId ? 'border-orange-500/40 bg-orange-500/5' : ''}`}>
                         {lastNftTxId ? (
                             <div className="h-full flex flex-col items-center justify-center text-center p-4">
                                 <div className="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mb-6">
@@ -465,12 +472,14 @@ export default function SayGmBlock() {
                                 >
                                     Check Status <Award size={12} />
                                 </a>
-                                <button
+                                <Button
                                     onClick={() => setLastNftTxId(null)}
-                                    className="text-[10px] text-gray-500 hover:text-white transition-colors active:scale-[0.98] uppercase font-mono"
+                                    variant="ghost"
+                                    size="sm"
+                                    className="text-[10px] uppercase font-mono"
                                 >
                                     Dismiss
-                                </button>
+                                </Button>
                             </div>
                         ) : (
                             <>
@@ -483,7 +492,7 @@ export default function SayGmBlock() {
                                             </span>
                                         )}
                                     </div>
-                                    <p className="text-gray-500 text-xs leading-relaxed mb-8">
+                                    <p className="text-zinc-400 text-xs leading-relaxed mb-8">
                                         Keep a 21+ day streak to unlock the discounted mint fee of 1 STX.
                                     </p>
                                     <div className="inline-block px-4 py-2 bg-white/5 border border-white/10 rounded-lg font-mono text-xl font-bold text-white mb-8">
@@ -493,18 +502,19 @@ export default function SayGmBlock() {
 
 
                                 <div>
-                                    <button
+                                    <Button
                                         onClick={handleMintNFT}
                                         disabled={isNFTLoading || isActionPending}
-                                        className="w-full py-4 bg-orange-950/10 border border-orange-500/30 text-orange-500/80 font-bold rounded-xl hover:bg-orange-600/20 hover:text-orange-400 transition-all active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                                        variant="outline"
+                                        className="w-full py-4 bg-orange-950/10 border-orange-500/30 text-orange-500/80 font-bold rounded-xl hover:bg-orange-600/20 hover:text-orange-400"
                                     >
                                         {isNFTLoading ? <Loader2 className="animate-spin" /> : (
                                             <>
                                                 Mint Badge <Award size={16} />
                                             </>
                                         )}
-                                    </button>
-                                    <p className="mt-4 text-[10px] text-gray-600 font-mono uppercase tracking-widest text-center">
+                                    </Button>
+                                    <p className="mt-4 text-[10px] text-zinc-400 font-mono uppercase tracking-widest text-center">
                                         {hasStreakDiscount ? "Eligible for discount" : "Streak: " + streakData.currentStreak + "/21"}
                                     </p>
                                     {!hasStreakDiscount && streakData.currentStreak === 0 && (
@@ -519,7 +529,7 @@ export default function SayGmBlock() {
 
 
             {/* FOOTER */}
-            <footer className="fixed bottom-0 left-0 right-0 p-6 flex justify-center gap-8 text-[10px] font-mono text-gray-600 uppercase tracking-widest bg-gradient-to-t from-black to-transparent z-20">
+            <footer className="fixed bottom-0 left-0 right-0 p-6 flex justify-center gap-8 text-[10px] font-mono text-zinc-400 uppercase tracking-widest bg-gradient-to-t from-black to-transparent z-20">
                 <a href="https://github.com/cryptoflops/gm-on-stacks" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
                     <Github size={12} /> GitHub
                 </a>
