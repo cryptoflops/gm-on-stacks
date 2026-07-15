@@ -12,7 +12,7 @@ import {
     principalCV,
 } from "@stacks/transactions";
 
-import { Wallet, Loader2, Send, Award, Github, Zap, CheckCircle2, LayoutDashboard, History, Globe } from "lucide-react";
+import { Wallet, Loader2, Send, Award, Zap, CheckCircle2, LayoutDashboard, History, Globe } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import {
@@ -528,18 +528,6 @@ export default function SayGmBlock() {
             )}
 
 
-            {/* FOOTER */}
-            <footer className="fixed bottom-0 left-0 right-0 p-6 flex justify-center gap-8 text-[10px] font-mono text-zinc-400 uppercase tracking-widest bg-gradient-to-t from-black to-transparent z-20">
-                <a href="https://github.com/cryptoflops/gm-on-stacks" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
-                    <Github size={12} /> GitHub
-                </a>
-                <a href="https://talent.app/~/ecosystems/stacks" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                    Talent Protocol
-                </a>
-                <a href="https://stacks.co" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                    Stacks
-                </a>
-            </footer>
         </section>
     );
 }

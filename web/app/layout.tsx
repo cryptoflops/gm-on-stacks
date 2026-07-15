@@ -39,7 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} antialiased selection:bg-brand selection:text-white bg-black`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem("theme");if(t==="light"||(!t&&window.matchMedia("(prefers-color-scheme: light)").matches)){document.documentElement.classList.remove("dark")}else{document.documentElement.classList.add("dark")}}catch(e){}})();` }} />
+      </head>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} antialiased selection:bg-brand selection:text-white bg-[var(--color-surface)] text-[var(--color-foreground)]`}>
         <div className="fixed inset-0 dot-grid pointer-events-none -z-10 opacity-20"></div>
 
         {/* Soft Vignette and Vignette Bottom */}

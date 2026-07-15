@@ -4,6 +4,7 @@
   --color-brand: #FF5500;
   --color-surface: #000000;
   --color-panel: #0A0A0A;
+  --color-foreground: #e0e0e0;
   --font-sans: var(--font-inter), sans-serif;
   --font-display: var(--font-display), sans-serif;
   --font-mono: var(--font-mono), monospace;
@@ -11,20 +12,27 @@
 
 :root {
   --brand: #FF5500;
-  --surface: #000000;
-  --panel: #0A0A0A;
+  --color-surface: #FAFAF9;
+  --color-panel: #FFFFFF;
+  --color-foreground: #0A0A0A;
+}
+
+.dark {
+  --color-surface: #000000;
+  --color-panel: #0A0A0A;
+  --color-foreground: #e0e0e0;
 }
 
 body {
-  background-color: #000;
-  color: #e0e0e0;
+  background-color: var(--color-surface);
+  color: var(--color-foreground);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
 /* Glass & Panel Utils */
 .glass-card {
-  background: rgba(10, 10, 10, 0.4);
+  background: color-mix(in srgb, var(--color-panel) 40%, transparent);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.5rem;
@@ -59,7 +67,7 @@ body {
 
 .glass-card:hover {
   border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(20, 20, 20, 0.5);
+  background: color-mix(in srgb, var(--color-panel) 50%, transparent);
 }
 
 .glass-card-purple {
