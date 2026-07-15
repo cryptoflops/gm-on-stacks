@@ -5,7 +5,6 @@ import { useWallet } from "@/components/WalletContext";
 import { Wallet, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
     const { isConnected, address, networkMode, setNetworkMode, connectWallet, disconnectWallet } = useWallet();
@@ -56,7 +55,6 @@ export default function Navbar() {
 
             {/* RIGHT: CONNECT WALLET */}
             <div className="flex items-center gap-3">
-              <ThemeToggle />
               <Button
                 onClick={handleConnect}
                 disabled={isConnecting}

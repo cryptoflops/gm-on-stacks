@@ -10,29 +10,16 @@
   --font-mono: var(--font-mono), monospace;
 }
 
-:root {
-  --brand: #FF5500;
-  --color-surface: #FAFAF9;
-  --color-panel: #FFFFFF;
-  --color-foreground: #0A0A0A;
-}
-
-.dark {
-  --color-surface: #000000;
-  --color-panel: #0A0A0A;
-  --color-foreground: #e0e0e0;
-}
-
 body {
-  background-color: var(--color-surface);
-  color: var(--color-foreground);
+  background-color: #000000;
+  color: #e0e0e0;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
 /* Glass & Panel Utils */
 .glass-card {
-  background: color-mix(in srgb, var(--color-panel) 40%, transparent);
+  background: rgba(10, 10, 10, 0.4);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.5rem;
@@ -67,7 +54,7 @@ body {
 
 .glass-card:hover {
   border-color: rgba(255, 255, 255, 0.2);
-  background: color-mix(in srgb, var(--color-panel) 50%, transparent);
+  background: rgba(10, 10, 10, 0.5);
 }
 
 .glass-card-purple {
