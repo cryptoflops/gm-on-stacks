@@ -174,7 +174,7 @@ export default function CommunityStats() {
         {/* Stats Bar */}
         <div className="glass-card !p-0 overflow-hidden">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/[0.06]">
-            {statItems.map((item, i) => {
+            {statItems.map((item) => {
               const Icon = item.icon;
               return (
                 <div
