@@ -4,6 +4,17 @@ import { Github, Globe } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-[var(--color-panel)]/50 backdrop-blur-xl relative z-10">
+      {/* Cross-project links */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-4 border-b border-border">
+        <div className="flex flex-wrap justify-center gap-6 text-xs text-zinc-600 mb-6">
+          <span>Built by <a href="https://github.com/cryptoflops" className="hover:text-zinc-400 transition-colors">cryptoflops</a></span>
+          <span>·</span>
+          <a href="https://aegis-aev.pages.dev" className="hover:text-white transition-colors">Aegis</a>
+          <a href="https://quest-dao.pages.dev" className="hover:text-white transition-colors">QuestDAO</a>
+          <a href="https://stacks-jackpot-wall.pages.dev" className="hover:text-white transition-colors">Jackpot Wall</a>
+        </div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-3">

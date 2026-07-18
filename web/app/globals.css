@@ -17,6 +17,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Section Label */
+.data-label {
+  font-size: 10px;
+  font-family: var(--font-mono), monospace;
+  color: #a1a1aa;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
 /* Glass & Panel Utils */
 .glass-card {
   background: rgba(10, 10, 10, 0.4);
