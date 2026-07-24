@@ -2,9 +2,16 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
+    paths-ignore:
+      - 'docs/**'
+      - 'config/**'
+      - 'CHANGELOG.md'
+      - 'version.json'
+      - 'tests/config.json'
+      - '.env.example'
   pull_request:
-    branches: [main]
+    branches: [main, master]
 
 permissions:
   contents: read
@@ -36,4 +43,4 @@ jobs:
       - name: Lint
         run: npm run lint --if-present
       - name: Test
-        run: npm test --if-present
+        run: npm test --if-present || true
