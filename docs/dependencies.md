@@ -1,6 +1,6 @@
 # Dependency Decisions
 
-Updated: 2026-07-26
+Updated: 2026-07-27
 
 ## Core
 - @stacks/transactions: ^6.17.0
@@ -9,4 +9,4 @@ Updated: 2026-07-26
 ## Notes
 - Using hiro SDK for read-only calls
 
-Audit: 6svocl6b
+Audit: p7t6i2v0
