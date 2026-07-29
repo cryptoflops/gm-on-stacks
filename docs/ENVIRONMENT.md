@@ -1,6 +1,6 @@
 # gm-on-stacks Environment Guide
 
-Generated: 2026-07-27T02:47:07.137Z
+Generated: 2026-07-29T01:50:15.465Z
 
 ## Requirements
 - Node.js >= 18
@@ -9,4 +9,4 @@ Generated: 2026-07-27T02:47:07.137Z
 ## Validation
 Ensure `.env` matches `.env.example` before deployment.
 
-Build: 8kemg0ep
+Build: l7r8r3f9
