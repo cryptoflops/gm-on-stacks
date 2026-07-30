@@ -1,9 +1,9 @@
 # Changelog
 
-## [Unreleased] - 2026-07-29
+## [Unreleased] - 2026-07-30
 
 ### Changed
-- Optimized RPC batch requests for lower latency
+- Enhanced mobile responsiveness on smaller screens
 
 ### Fixed
-- Resolved race condition in wallet state sync
+- Fixed edge case in balance display for micro amounts
