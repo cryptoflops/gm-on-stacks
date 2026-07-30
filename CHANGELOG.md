@@ -6,4 +6,4 @@
 - Enhanced mobile responsiveness on smaller screens
 
 ### Fixed
-- Fixed edge case in balance display for micro amounts
+- Addressed timeout handling for slow RPC responses
