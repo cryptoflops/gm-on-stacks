@@ -6,4 +6,4 @@ Validated: 2026-07-31
 - Assume v2/info endpoint remains stable
 - Handle missing optional values gracefully in Clarity responses
 
-Audit hash: kxzt6aqz
+Audit hash: 4lv08qm7
