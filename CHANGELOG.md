@@ -1,9 +1,9 @@
 # Changelog
 
-## [Unreleased] - 2026-07-30
+## [Unreleased] - 2026-08-02
 
 ### Changed
-- Enhanced mobile responsiveness on smaller screens
+- Refactored wallet connection flow for reliability
 
 ### Fixed
 - Addressed timeout handling for slow RPC responses
