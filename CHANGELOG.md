@@ -3,7 +3,7 @@
 ## [Unreleased] - 2026-08-02
 
 ### Changed
-- Refactored wallet connection flow for reliability
+- Reduced bundle size via tree-shaking unused modules
 
 ### Fixed
 - Addressed timeout handling for slow RPC responses
