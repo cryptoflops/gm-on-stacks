@@ -1,12 +1,12 @@
 # Dependency Decisions
 
-Updated: 2026-08-02
+Updated: 2026-08-03
 
 ## Core
-- @stacks/transactions: ^6.16.0
-- @stacks/network: ^6.16.0
+- @stacks/transactions: ^6.15.0
+- @stacks/network: ^6.17.0
 
 ## Notes
-- Using hiro SDK for read-only calls
+- Pinned stacks SDK for post-Nakamoto compatibility
 
-Audit: xlizn8xn
+Audit: 7vxher2i
